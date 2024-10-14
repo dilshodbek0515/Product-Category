@@ -12,7 +12,7 @@
     display: flex;
     gap: 20px;
     list-style: none;
-    width: 1230px;
+    max-width: 1230px;
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 5px;
@@ -185,4 +185,11 @@
 
 .more:hover {
     opacity: .5;
+}
+
+
+@media (max-width:1250px) {
+    .category {
+        max-width: 700px;
+    }
 }
