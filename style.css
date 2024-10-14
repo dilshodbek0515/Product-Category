@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* navbar */
+
+.category {
+    overflow: auto;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 1230px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+.category_item data {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 3px 3px 10px gray;
+        transition: .5s;
+    }
+}
+
+.category::-webkit-scrollbar {
+    height: 0;
+}
+
+
+/* cards */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 7px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card strong {
+    font-size: 16px;
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 7px 20px;
+    border-radius: 14px;
+    background-color: dodgerblue;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+/* loading */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: dodgerblue;
+    height: 100vh;
+}
+
+
+.lds-ripple,
+.lds-ripple div {
+    box-sizing: border-box;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid currentColor;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+    }
+
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
+
+/* btn buy now */
+.more {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    background-color: dodgerblue;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.more:hover {
+    opacity: .5;
+}
